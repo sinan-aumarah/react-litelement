@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "react": "16.1.1",
-    "react-dom": "16.1.1",
+    "react-dom": "16.1.2",
     "react-shadow-dom-retarget-events": "latest",
     "@polymer/lit-element": "0.5.1"
   },
