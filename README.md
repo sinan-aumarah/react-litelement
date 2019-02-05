@@ -1,2 +1,2 @@
 # react-litelement
-React webcomponent using LitElementand rendered in the shadowdom with event listener 
+React webcomponent using LitElement and rendered in the shadowdom with event listeners remapped and working 
