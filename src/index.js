@@ -15,7 +15,7 @@ class MyWebComponent extends LitElement {
     return `<slot></slot>`;
   }
 
-  render() {
+  connectedCallback() {
     const shadowDom = this.getShadowDom();
     const mountPoint = document.createElement('span');
     ReactDOM.render(<App />, mountPoint);
@@ -23,9 +23,6 @@ class MyWebComponent extends LitElement {
     retargetEvents(this.shadowRoot);
   }
 
-  connectedCallback() {
-    this.render();
-  }
 }
 
 customElements.define('my-webcomponent', MyWebComponent);
