@@ -45,6 +45,7 @@ class App extends React.Component {
   render() {
     return (
       <div style={wrapperStyles}>
+          <div>App props: {Object.keys(this.props).map(key => <span>{this.props[key]}, </span>)}</div>
         <MyButton onClick={this.handleClick} style={{fontSize: "22px"}} className="buttons">
           Click me: {this.state.clicksCounter}
         </MyButton>
